@@ -28,7 +28,7 @@ if (score >= 80 && score <= 100) {
 
 // Ternary Operator or Conditional Operator
 /*
-let result: any = condition ? expression1 : expresion2; 
+let result: any = condition ? expression1 : expression2; 
 */
 let n: number = 5;
 let result: string = n % 2 == 1 ? "odd" : "even";
