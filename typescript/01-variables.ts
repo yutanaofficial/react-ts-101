@@ -1,5 +1,3 @@
-console.log("Hello TypeScript!");
-
 var shape = "circle";
 let radius = 10;
 const PI = 3.14;
