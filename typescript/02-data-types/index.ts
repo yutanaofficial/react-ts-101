@@ -1,8 +1,8 @@
-import { describe } from "node:test";
-
 // Data Types: Boolean
 const isTrueBool: boolean = true;
+const thisIsTrue = true;
 const isFalseBool: boolean = false;
+const thisIsFalse = false;
 console.log("Line6 :", typeof isTrueBool);
 
 // Data Types: Number
