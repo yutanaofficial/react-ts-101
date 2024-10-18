@@ -32,7 +32,7 @@ for (let char of city) {
   console.log(char);
 }
 
-// For In\
+// For In
 let colors: string[] = ["red", "green", "blue"];
 for (let index in colors) {
   console.log(`colors[${index}] = ${colors[index]}`);
