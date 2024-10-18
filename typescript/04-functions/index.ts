@@ -1,6 +1,8 @@
-// function name(params: type) {
-//   // code
-// }
+/*
+function name(params: type) {
+  code
+}
+*/
 
 // Normal Function
 function add1(number1: number, number2: number) {
