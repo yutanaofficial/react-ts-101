@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function() {
+                alert('This is a message from the DOM 🤭');
+            });
+
+            var nothing = document.getElementsByClassName('nothing');
+            for (var i = 0; i < nothing.length; i++) {
+                const element = nothing[i];
+                element.addEventListener('click', function() {
+                    element.innerHTML = 'why did you click me? 😤';
+                    document.append(
+                        document.createElement('h1').innerHTML = "I'm sorry 😢"
+                    )
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="content">
+        <button id="btn">I have something to say 🤭</button>
+        <button class="nothing">I have nothing to say 🤫</button>
+    </div>
+</body>
+</html>
